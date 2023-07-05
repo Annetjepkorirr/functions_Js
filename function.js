@@ -1,7 +1,7 @@
 // Create an array containing the names of all items in the 
 // inventory maximum of 10.
 
-let itemsInventory= ["Apple","Mango","Pineapple","Banana","Kiwi","Pawpaw","Passion"]
+let itemsInventory= ["Apple","Mango","Pineapple","Banana","Kiwi","Orange","Passion"]
 
 // Create a separate array with the corresponding stock quantities of
 //  each item maximum of 10.
@@ -17,16 +17,16 @@ function add(item,quantity){
     itemsInventory.push(item)
     quantiesInventory.push(quantity)
    }
-   console.log(item)
+//    console.log(item)
    } 
 add("cucumber",20)
-
 add("Watermeolon",39)
-
 add("Lemon",70)
-add(45)
+
 console.log(itemsInventory)
 console.log(quantiesInventory)
+
+
 
 
 // Write a function to update the stock quantity of an existing item.
@@ -36,6 +36,12 @@ function update(){
 
 }
 update()
+// function updateStock(){
+//     let inventory = itemsInventory.slice(-1).map(num =>num*2)
+//     console.log(inventory)
+// }
+// console.log(itemsInventory)
+// updateStock()
 // Write a function to calculate the total number of items in the inventory
 function calculate(){
     let num = 0
@@ -46,6 +52,15 @@ function calculate(){
     console.log(num)
     }
     calculate()
+
+    // function uptadeStock(){
+    //     let num1 = 0;
+    //     for (let i = 0; i < quantiesInventory.length; i++) {
+    //         num1+=quantiesInventory
+    //     }
+    // }
+    // console.log(num1);
+
 
 
 // Write a function to find the item with the lowest stock quantity.
